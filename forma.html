@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Forma</title>
+	<link rel="stylesheet" type="text/css" href="css/forma-style.css">
+</head>
+<body >
+
+	  <form id="forma" class="tamna-tema">
+        <h1>Kontakt forma 
+            <span>Molim Vas da popunite sva polja.</span>
+        </h1>
+        <label>
+            <span>Vaše ime:</span>
+            <input id="ime" type="text" name="name" placeholder="Unesite puno ime i prezime" onkeypress="proveriDuzinu()" />
+        </label>
+        
+        <label>
+            <span>Vaš email:</span>
+            <input id="email" type="email" name="email" placeholder="Unesite ispravnu email adresu" />
+        </label>
+
+        <label>
+            <br />
+            <br /> 
+            <h1><span>Molim Vas da ocenite moj CV ocenom od 1 do 5</span></h1>
+            
+            <span>1</span>
+            <input type="radio" name="ocena" value="" />
+            
+            <span>2</span>
+            <input type="radio" name="ocena" value="" />
+            
+            <span>3</span>
+            <input type="radio" name="ocena" value="" /> 
+
+            <span>4</span>
+            <input type="radio" name="ocena" value="" /> 
+
+            <span>5</span>
+            <input type="radio" name="ocena" value="" /> 
+                        
+        </label>
+
+        <label>
+            <span>Poruka:</span>
+            <textarea id="poruka" name="message" placeholder="Unesite tekst poruke"></textarea>
+        </label>
+
+        <label>
+            <span>&nbsp;</span> 
+            <input id="dugme" type="button" class="button" value="Pošalji" onclick="validiraj()" /> 
+        </label>     
+	</form>
+
+<script type="text/javascript" src="js/forma.js"></script>
+
+</body>
+</html>
