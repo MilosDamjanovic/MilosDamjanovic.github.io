@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body{
   font-family: 'Yrsa', sans-serif;
   font-size: 26px;
@@ -18,25 +21,50 @@ header{
 #info{
   list-style-type: none;
   display: inline;
-  float: right;
 }
 #sidemenu{
     display: inline;
-    margin-top: 55px;
     padding-left: 0px;
     padding-right: 0px;
     margin-left: -30px;
 }
 #main{
   display: inline;
-  float: right;
 }
-.naslovi{
+.headings{
   text-align: center;
   padding-bottom: 15px;
   line-height: 30px;
   padding-top: 15px;
 }
+/* GRID SPECIALITIES CONTAINER START */
+.grid-specialities-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 1rem;
+}
+.item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.item-heading {
+  text-align: center;
+}
+.item-img {
+  width: 20rem;
+  height: 20rem;
+}
+/* GRID SPECIALITIES  CONTAINER END */
+
+/* GRID SKILLS CONTAINER START */
+.grid-skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 1.6rem;
+}
+/* GRID SKILLS CONTAINER START */
+
 .faks{
   display: inline;
 }
@@ -46,7 +74,6 @@ header{
 }
 #srednja{
   display: inline;
-  float: left;
 }
 #pozicije{
   -webkit-padding-start: 0px;
@@ -151,12 +178,4 @@ ul p{
 }
 .skill{
   list-style-type: none;
-}
-
-#skills .skill-list .skill-image:focus,
-#skills .skill-list .skill-image:hover {
-    opacity: 0.8;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    z-index: 1;
 }
